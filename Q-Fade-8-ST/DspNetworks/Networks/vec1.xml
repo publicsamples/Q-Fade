@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="vec1" Version="0.0.0" CompileChannelAmount="16">
+  <Node FactoryPath="container.chain" ID="vec1" Bypassed="0" ShowParameters="1">
+    <Nodes>
+      <Node ID="multi" FactoryPath="container.multi" Bypassed="0">
+        <Nodes>
+          <Node ID="ch1" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade1" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282954323">
+                    <Properties>
+                      <Property ID="Connection" Value="v99"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split1" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch2" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split2" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade2" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282954323">
+                    <Properties>
+                      <Property ID="Connection" Value="v99"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma2" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split3" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain3" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma2" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain1" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain1" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch3" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split4" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade3" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282930098">
+                    <Properties>
+                      <Property ID="Connection" Value="v2"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma1" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split5" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain4" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma1" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain2" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain2" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch4" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split6" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade4" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282930098">
+                    <Properties>
+                      <Property ID="Connection" Value="v2"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma3" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split7" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain5" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma3" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain3" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain3" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch5" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split8" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade5" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282864562">
+                    <Properties>
+                      <Property ID="Connection" Value="v3"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma4" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split9" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain6" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma4" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain4" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain4" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch6" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split10" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade6" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282864562">
+                    <Properties>
+                      <Property ID="Connection" Value="v3"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma5" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split11" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain7" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma5" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain5" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain5" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch7" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split12" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade7" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282864818">
+                    <Properties>
+                      <Property ID="Connection" Value="v4"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma6" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split13" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain8" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma6" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain6" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain6" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch8" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split14" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade8" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282864818">
+                    <Properties>
+                      <Property ID="Connection" Value="v4"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma7" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split15" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain9" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma7" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain7" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain7" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch9" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split16" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade9" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282930098">
+                    <Properties>
+                      <Property ID="Connection" Value="v5"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma8" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split17" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain10" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma8" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain8" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain8" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch10" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split18" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade10" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282930098">
+                    <Properties>
+                      <Property ID="Connection" Value="v5"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma9" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split19" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain11" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma9" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain9" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain9" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch11" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split20" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade11" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282864818">
+                    <Properties>
+                      <Property ID="Connection" Value="v6"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma10" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split21" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain12" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma10" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain10" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain10" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch12" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split22" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade12" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282864818">
+                    <Properties>
+                      <Property ID="Connection" Value="v6"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma11" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split23" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain13" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma11" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain11" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain11" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch13" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split24" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade13" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282930098">
+                    <Properties>
+                      <Property ID="Connection" Value="v7"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma12" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split25" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain14" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma12" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain12" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain12" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch14" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split26" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade14" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282930098">
+                    <Properties>
+                      <Property ID="Connection" Value="v7"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma13" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split27" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain15" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma13" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain13" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain13" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch15" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split28" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade15" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282864306">
+                    <Properties>
+                      <Property ID="Connection" Value="v8"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma14" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split29" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain16" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma14" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain14" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain14" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch16" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split30" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="fade16" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4282864306">
+                    <Properties>
+                      <Property ID="Connection" Value="v8"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma15" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split31" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain17" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma15" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="gain15" ParameterId="Gain"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="gain15" FactoryPath="core.gain" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="0.0"/>
+                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+        </Nodes>
+        <Parameters/>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter ID="fade" MinValue="0.0" MaxValue="1.0" Value="0.3353062744140625">
+        <Connections/>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>

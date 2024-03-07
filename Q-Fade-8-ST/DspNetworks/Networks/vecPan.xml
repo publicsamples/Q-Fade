@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="vecPan" Version="0.0.0" CompileChannelAmount="16">
+  <Node FactoryPath="container.chain" ID="vecPan" Bypassed="0" ShowParameters="1">
+    <Nodes>
+      <Node ID="multi" FactoryPath="container.multi" Bypassed="0">
+        <Nodes>
+          <Node ID="ch1" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage1" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4284789319">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan1"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split1" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch2" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split2" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage2" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4284789319">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan1"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma2" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split3" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain3" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma2" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner1" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner1" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch3" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split4" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage3" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4284723783">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan2"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma1" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split5" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain4" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma1" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner2" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner2" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch4" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split6" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage4" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4284723783">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan2"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma3" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split7" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain5" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma3" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner3" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner3" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch5" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split8" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage5" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4284658247">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan3"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma4" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split9" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain6" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma4" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner4" ParameterId="Frequency"/>
+                          <Connection NodeId="jpanner4" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner4" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency" Automated="1"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch6" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split10" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage6" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4284658247">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan3"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma5" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split11" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain7" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma5" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner5" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner5" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch7" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split12" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage7" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4284658247">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan4"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma6" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split13" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain8" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma6" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner6" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner6" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch8" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split14" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage8" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4284658247">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan4"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma7" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split15" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain9" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma7" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner7" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner7" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch9" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split16" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage9" FactoryPath="routing.global_cable" Bypassed="0" NodeColour="4284592711">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan5"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma8" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split17" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain10" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma8" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner8" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner8" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch10" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split18" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage10" FactoryPath="routing.global_cable" Bypassed="0"
+                        NodeColour="4284592711">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan5"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma9" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split19" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain11" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma9" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner9" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner9" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch11" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split20" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage11" FactoryPath="routing.global_cable" Bypassed="0"
+                        NodeColour="4284527175">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan6"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma10" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split21" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain12" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma10" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner10" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner10" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch12" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split22" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage12" FactoryPath="routing.global_cable" Bypassed="0"
+                        NodeColour="4284527175">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan6"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma11" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split23" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain13" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma11" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner11" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner11" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch13" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split24" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage13" FactoryPath="routing.global_cable" Bypassed="0"
+                        NodeColour="4284527175">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan7"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma12" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split25" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain14" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma12" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner12" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner12" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch14" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split26" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage14" FactoryPath="routing.global_cable" Bypassed="0"
+                        NodeColour="4284527175">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan7"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma13" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split27" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain15" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma13" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner13" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner13" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch15" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split28" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage15" FactoryPath="routing.global_cable" Bypassed="0"
+                        NodeColour="4284527175">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan8"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma14" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split29" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain16" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma14" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner14" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner14" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="ch16" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="split30" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="stage16" FactoryPath="routing.global_cable" Bypassed="0"
+                        NodeColour="4284527175">
+                    <Properties>
+                      <Property ID="Connection" Value="stagePan8"/>
+                    </Properties>
+                    <ModulationTargets>
+                      <Connection NodeId="pma15" ParameterId="Add"/>
+                    </ModulationTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="split31" FactoryPath="container.split" Bypassed="0">
+                <Nodes>
+                  <Node ID="chain17" FactoryPath="container.chain" Bypassed="0">
+                    <Nodes>
+                      <Node ID="pma15" FactoryPath="control.pma" Bypassed="0">
+                        <ModulationTargets>
+                          <Connection NodeId="jpanner15" ParameterId="Pan"/>
+                        </ModulationTargets>
+                        <Parameters>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Multiply" Value="1.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Add" Automated="1"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner15" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <ComplexData>
+                          <Filters>
+                            <Filter Index="-1"/>
+                          </Filters>
+                        </ComplexData>
+                        <Parameters>
+                          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                     ID="Frequency"/>
+                          <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                     ID="Q"/>
+                          <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                     ID="Smoothing" Value="0.009999999776482582"/>
+                          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode"/>
+                          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Value="1.0"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+        </Nodes>
+        <Parameters/>
+      </Node>
+    </Nodes>
+    <Parameters/>
+  </Node>
+</Network>
