@@ -12,15 +12,15 @@
   <AdditionalDspLibraries value=""/>
   <OSXStaticLibs value=""/>
   <WindowsStaticLibFolder value=""/>
-  <ExtraDefinitionsWindows value="HISE_NUM_FX_PLUGIN_CHANNELS=16"/>
-  <ExtraDefinitionsOSX value="HISE_NUM_FX_PLUGIN_CHANNELS=16"/>
+  <ExtraDefinitionsWindows value="HISE_NUM_FX_PLUGIN_CHANNELS=16&#10;"/>
+  <ExtraDefinitionsOSX value="HISE_NUM_FX_PLUGIN_CHANNELS=16&#10;&#10;"/>
   <ExtraDefinitionsIOS value=""/>
   <ExtraDefinitionsLinux value="HISE_NUM_FX_PLUGIN_CHANNELS=16"/>
   <AppGroupID value=""/>
   <RedirectSampleFolder value=""/>
   <AAXCategoryFX value="AAX_ePlugInCategory_Modulation"/>
   <VST3Category value=""/>
-  <SupportMonoFX value="No"/>
+  <SupportMonoFX value="0"/>
   <EnableMidiInputFX value="No"/>
   <EnableMidiOut value="No"/>
   <EnableSoundGeneratorsFX value="1"/>

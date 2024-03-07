@@ -9,18 +9,60 @@
         <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
           <ChildProcessors/>
           <Content>
-            <Control type="ScriptSlider" id="Knob1" value="0.7899999618530273"/>
-            <Control type="ScriptSlider" id="Knob2" value="0.9300000071525574"/>
+            <Control type="ScriptSlider" id="Scan" value="0.2899999916553497"/>
+            <Control type="ScriptSlider" id="VolSmooth" value="0.0"/>
             <Control type="ScriptComboBox" id="ComboBox1" value="1.0"/>
-            <Control type="ScriptSliderPack" id="FilterSliders" value="0.0" data="32......DtdT5i8nvsOMyLC+rGEt7SyLyzOlYlY+....9C"/>
-            <Control type="ScriptSlider" id="FilterOffset" value="0.5699999928474426"/>
-            <Control type="ScriptSlider" id="FilterResonance" value="0.3353062868118286"/>
+            <Control type="ScriptSliderPack" id="FilterSliders" value="6.0" data="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
+            <Control type="ScriptSlider" id="FxOffset" value="0.0"/>
+            <Control type="ScriptSlider" id="FilterResonance" value="0.9200000166893005"/>
             <Control type="ScriptComboBox" id="FilterType" value="1.0"/>
             <Control type="ScriptComboBox" id="EqType" value="0.0"/>
             <Control type="ScriptSlider" id="EqPeak" value="0.3353062868118286"/>
+            <Control type="ScriptSlider" id="FxOffsetMod" value="1.0"/>
             <Control type="ScriptComboBox" id="FxType" value="1.0"/>
-            <Control type="ScriptSliderPack" id="PanSliders" value="-1.0" data="32.................MyLy8ziBW4iT35oOeT359HEtd7C"/>
-            <Control type="ScriptSlider" id="PanOffset" value="0.0"/>
+            <Control type="ScriptSliderPack" id="PanSliders" value="-1.0" data="32.60.B+nkAI7SN+mvOXfuB+bO7K7i0oyvOzJdC+L41N7C"/>
+            <Control type="ScriptSlider" id="PanOffset" value="0.5099999904632568"/>
+            <Control type="ScriptSlider" id="TempoS3" value="0.0"/>
+            <Control type="ScriptTable" id="ScriptTable17" value="0.0" data=""/>
+            <Control type="ScriptTable" id="ScriptTable29" value="0.0" data=""/>
+            <Control type="ScriptButton" id="TRIG33" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG34" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG35" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG36" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG37" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG38" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG39" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG40" value="0.0"/>
+            <Control type="ScriptSlider" id="ScriptSlider77" value="0.02999999932944775"/>
+            <Control type="ScriptSlider" id="ScriptSlider78" value="0.009999999776482582"/>
+            <Control type="ScriptComboBox" id="MODSEL3" value="2.0"/>
+            <Control type="ScriptButton" id="TrigMode3" value="0.0"/>
+            <Control type="ScriptSlider" id="ScriptSlider18" value="1.0"/>
+            <Control type="ScriptComboBox" id="SOURC20" value="1.0"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack9" value="-1" data="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
+            <Control type="ScriptTable" id="ScriptTable21" value="0.0" data=""/>
+            <Control type="ScriptSlider" id="TempoF3" value="0.0"/>
+            <Control type="ScriptSlider" id="Knob3" value="-2.235174179077148e-8"/>
+            <Control type="ScriptSlider" id="TempoS4" value="0.0"/>
+            <Control type="ScriptTable" id="ScriptTable18" value="" data=""/>
+            <Control type="ScriptTable" id="ScriptTable30" value="" data=""/>
+            <Control type="ScriptButton" id="TRIG41" value=""/>
+            <Control type="ScriptButton" id="TRIG42" value=""/>
+            <Control type="ScriptButton" id="TRIG43" value=""/>
+            <Control type="ScriptButton" id="TRIG44" value=""/>
+            <Control type="ScriptButton" id="TRIG45" value=""/>
+            <Control type="ScriptButton" id="TRIG46" value=""/>
+            <Control type="ScriptButton" id="TRIG47" value=""/>
+            <Control type="ScriptButton" id="TRIG48" value=""/>
+            <Control type="ScriptSlider" id="ScriptSlider79" value=""/>
+            <Control type="ScriptSlider" id="ScriptSlider80" value=""/>
+            <Control type="ScriptComboBox" id="MODSEL4" value=""/>
+            <Control type="ScriptButton" id="TrigMode4" value="0.0"/>
+            <Control type="ScriptSlider" id="ScriptSlider19" value="1.0"/>
+            <Control type="ScriptComboBox" id="SOURC21" value="3.438273429870605"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack10" value="-1" data="32.67cs9.pFo5yO0flO...f+nDCL7C...3OV4P.+......"/>
+            <Control type="ScriptTable" id="ScriptTable22" value="" data=""/>
+            <Control type="ScriptSlider" id="TempoF4" value=""/>
           </Content>
           <UIData Source="qfadeUIData"/>
         </Processor>
@@ -152,6 +194,30 @@
               <Content/>
               <Networks>
                 <Network ID="StagesPan" Version="0.0.0"/>
+              </Networks>
+              <UIData>
+                <ContentProperties DeviceType="Desktop"/>
+              </UIData>
+            </Processor>
+            <Processor Type="ScriptTimeVariantModulator" ID="Gmod1" Bypassed="0" Intensity="1.0"
+                       Bipolar="0" NumTables="4" NumSliderPacks="4">
+              <ChildProcessors/>
+              <Content/>
+              <Networks>
+                <Network ID="polymod3" AllowPolyphonic="1" Version="0.0.0" CompileChannelAmount="1"
+                         HasTail="0"/>
+              </Networks>
+              <UIData>
+                <ContentProperties DeviceType="Desktop"/>
+              </UIData>
+            </Processor>
+            <Processor Type="ScriptTimeVariantModulator" ID="Gmod2" Bypassed="0" Intensity="1.0"
+                       Bipolar="0" NumTables="4" NumSliderPacks="4">
+              <ChildProcessors/>
+              <Content/>
+              <Networks>
+                <Network ID="polymod3" AllowPolyphonic="1" Version="0.0.0" CompileChannelAmount="1"
+                         HasTail="0"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
