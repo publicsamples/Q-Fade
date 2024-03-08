@@ -25,7 +25,7 @@
              numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
              scaleFactor="0.2000000029802322" isPluginParameter="1" pluginParameterName="XfadeSmooth"/>
   <Component type="ScriptComboBox" id="ComboBox1" x="75.0" y="326.0" max="4"
-             text="VolMode" items="SWITCH&#10;LINEAR&#10;RMS&#10;STACCK" processorId="fade"
+             text="VolMode" items="SWITCH&#10;LINEAR&#10;RMS&#10;STACK" processorId="fade"
              parameterId="fadetype" bgColour="3123520264" itemColour="3121811203"
              itemColour2="3121942791" textColour="3136677047" width="70" height="35.0"
              isPluginParameter="1" pluginParameterName="XfadeMode" fontName="Montserrat"/>
@@ -253,8 +253,7 @@
                fontName="Montserrat" textColour="3136677047" itemColour2="3136677047"/>
     <Component type="ScriptPanel" id="LFO1" x="143.0" y="27.0" width="150.0"
                height="110.0" parentComponent="GlobalMod1" itemColour="4291273585"
-               itemColour2="4291273585" textColour="4479336" borderRadius="0.0"
-               visible="0">
+               itemColour2="4291273585" textColour="4479336" borderRadius="0.0">
       <Component type="ScriptComboBox" id="SOURC20" x="26.0" y="20.0" max="3"
                  width="100.0" height="55.0" items="SINE&#10;SAW&#10;S&amp;H"
                  parentComponent="LFO1" processorId="Gmod1" parameterId="mode"
@@ -279,7 +278,8 @@
                parentComponent="GlobalMod1" fontName="Montserrat" textColour="4280227601"/>
     <Component type="ScriptPanel" id="Table3" x="143.0" y="27.0" width="150.0"
                height="110.0" parentComponent="GlobalMod1" itemColour="4291273585"
-               itemColour2="4291273585" textColour="4479336" borderRadius="0.0">
+               itemColour2="4291273585" textColour="4479336" borderRadius="0.0"
+               visible="0">
       <Component type="ScriptTable" id="ScriptTable21" x="10.0" y="10.0" width="130.0"
                  height="90.0" parentComponent="Table3" itemColour="1693968575"
                  bgColour="4280492571" itemColour2="4288627996" customColours="1"
