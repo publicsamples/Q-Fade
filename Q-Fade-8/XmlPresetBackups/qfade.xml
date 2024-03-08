@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Processor Type="SynthChain" ID="qfade" Bypassed="0" Gain="0.06683438271284103"
+           Balance="0.0" VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0"
+           packageName="" BuildVersion="650">
+  <ChildProcessors>
+    <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
+          <ChildProcessors/>
+          <Content>
+            <Control type="ScriptSlider" id="Scan" value="0.0"/>
+            <Control type="ScriptSlider" id="VolSmooth" value="0.03999999910593033"/>
+            <Control type="ScriptComboBox" id="ComboBox1" value="1.0"/>
+            <Control type="ScriptSliderPack" id="FilterSliders" value="6.0" data="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
+            <Control type="ScriptSlider" id="FxOffset" value="1.0"/>
+            <Control type="ScriptSlider" id="FilterResonance" value="0.3600000143051147"/>
+            <Control type="ScriptComboBox" id="FilterType" value="1.0"/>
+            <Control type="ScriptSlider" id="FxOffsetMod" value="0.0"/>
+            <Control type="ScriptSlider" id="FilterResonance1" value="0.3353062868118286"/>
+            <Control type="ScriptComboBox" id="FilterType1" value="1.0"/>
+            <Control type="ScriptSlider" id="FxOffset1" value="1.0"/>
+            <Control type="ScriptComboBox" id="FxType" value="2.0"/>
+            <Control type="ScriptSlider" id="FxOffset2" value="1.0"/>
+            <Control type="ScriptSliderPack" id="PanSliders" value="0.0" data="32.....+....7C...vO....+....7C...vO....+....7C"/>
+            <Control type="ScriptSlider" id="TempoS3" value="0.0"/>
+            <Control type="ScriptTable" id="ScriptTable17" value="0.0" data=""/>
+            <Control type="ScriptTable" id="ScriptTable29" value="0.0" data=""/>
+            <Control type="ScriptButton" id="TRIG33" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG34" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG35" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG36" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG37" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG38" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG39" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG40" value="0.0"/>
+            <Control type="ScriptSlider" id="ScriptSlider77" value="0.02999999932944775"/>
+            <Control type="ScriptSlider" id="ScriptSlider78" value="0.009999999776482582"/>
+            <Control type="ScriptComboBox" id="MODSEL3" value="1.0"/>
+            <Control type="ScriptButton" id="TrigMode3" value="0.0"/>
+            <Control type="ScriptSlider" id="ScriptSlider18" value="1.0"/>
+            <Control type="ScriptComboBox" id="SOURC20" value="3.0"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack9" value="7" data="32.67cs9.pFo5yO0flO...f+nDCL7C...3OV4P.+......"/>
+            <Control type="ScriptTable" id="ScriptTable21" value="0.0" data="60...............vOPvOv9rfsf8SjgJqOQuPO+PeRe3C...3OlYlY+....9SDv2rO...f+.....fl3Y0O"/>
+            <Control type="ScriptSlider" id="TempoF3" value="0.0"/>
+            <Control type="ScriptSlider" id="Knob3" value="-2.235174179077148e-8"/>
+            <Control type="ScriptSlider" id="TempoS4" value="0.0"/>
+            <Control type="ScriptTable" id="ScriptTable18" value="0.0" data=""/>
+            <Control type="ScriptTable" id="ScriptTable30" value="0.0" data=""/>
+            <Control type="ScriptButton" id="TRIG41" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG42" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG43" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG44" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG45" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG46" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG47" value="0.0"/>
+            <Control type="ScriptButton" id="TRIG48" value="0.0"/>
+            <Control type="ScriptSlider" id="ScriptSlider79" value="0.0"/>
+            <Control type="ScriptSlider" id="ScriptSlider80" value="0.0"/>
+            <Control type="ScriptComboBox" id="MODSEL4" value="3.0"/>
+            <Control type="ScriptButton" id="TrigMode4" value="0.0"/>
+            <Control type="ScriptSlider" id="ScriptSlider19" value="5.0"/>
+            <Control type="ScriptComboBox" id="SOURC21" value="1.0"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack10" value="7" data="32.67cs9.pFo5yO0flO...f+nDCL7C...3OV4P.+......"/>
+            <Control type="ScriptTable" id="ScriptTable22" value="0.0" data="60...............vOcibi9HhHh7SWOJrOD7C79vppp3C...3OwNwN+LyLy7iGEttO...f+.....vc2c2O"/>
+            <Control type="ScriptSlider" id="TempoF4" value="0.0"/>
+          </Content>
+          <UIData Source="qfadeUIData"/>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1.0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="1" Intensity="0.0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="EffectChain" ID="FX" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="ScriptFX" ID="Filter" Bypassed="1" NumTables="1" NumSliderPacks="1">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="16" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
+                         Channel2="2" Send2="-1" Channel3="3" Send3="-1" Channel4="4"
+                         Send4="-1" Channel5="5" Send5="-1" Channel6="6" Send6="-1" Channel7="7"
+                         Send7="-1" Channel8="8" Send8="-1" Channel9="9" Send9="-1" Channel10="10"
+                         Send10="-1" Channel11="11" Send11="-1" Channel12="12" Send12="-1"
+                         Channel13="13" Send13="-1" Channel14="14" Send14="-1" Channel15="15"
+                         Send15="-1"/>
+          <Content/>
+          <Networks>
+            <Network ID="vecFilter" Version="0.0.0" CompileChannelAmount="16"/>
+          </Networks>
+          <UIData>
+            <ContentProperties DeviceType="Desktop"/>
+          </UIData>
+        </Processor>
+        <Processor Type="ScriptFX" ID="Script FX1" Bypassed="1" NumTables="1" NumSliderPacks="1">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="16" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
+                         Channel2="2" Send2="-1" Channel3="3" Send3="-1" Channel4="4"
+                         Send4="-1" Channel5="5" Send5="-1" Channel6="6" Send6="-1" Channel7="7"
+                         Send7="-1" Channel8="8" Send8="-1" Channel9="9" Send9="-1" Channel10="10"
+                         Send10="-1" Channel11="11" Send11="-1" Channel12="12" Send12="-1"
+                         Channel13="13" Send13="-1" Channel14="14" Send14="-1" Channel15="15"
+                         Send15="-1"/>
+          <Content/>
+          <Networks>
+            <Network ID="TableFilter" Version="0.0.0"/>
+          </Networks>
+          <UIData>
+            <ContentProperties DeviceType="Desktop"/>
+          </UIData>
+        </Processor>
+        <Processor Type="ScriptFX" ID="EQ" Bypassed="0">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="16" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
+                         Channel2="2" Send2="-1" Channel3="3" Send3="-1" Channel4="4"
+                         Send4="-1" Channel5="5" Send5="-1" Channel6="6" Send6="-1" Channel7="7"
+                         Send7="-1" Channel8="8" Send8="-1" Channel9="9" Send9="-1" Channel10="10"
+                         Send10="-1" Channel11="11" Send11="-1" Channel12="12" Send12="-1"
+                         Channel13="13" Send13="-1" Channel14="14" Send14="-1" Channel15="15"
+                         Send15="-1"/>
+          <Content/>
+          <Networks>
+            <Network ID="vecEQ" Version="0.0.0" CompileChannelAmount="16"/>
+          </Networks>
+          <UIData>
+            <ContentProperties DeviceType="Desktop"/>
+          </UIData>
+        </Processor>
+        <Processor Type="ScriptFX" ID="Gain" Bypassed="0">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="16" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
+                         Channel2="2" Send2="-1" Channel3="3" Send3="-1" Channel4="4"
+                         Send4="-1" Channel5="5" Send5="-1" Channel6="6" Send6="-1" Channel7="7"
+                         Send7="-1" Channel8="8" Send8="-1" Channel9="9" Send9="-1" Channel10="10"
+                         Send10="-1" Channel11="11" Send11="-1" Channel12="12" Send12="-1"
+                         Channel13="13" Send13="-1" Channel14="14" Send14="-1" Channel15="15"
+                         Send15="-1"/>
+          <Content/>
+          <Networks>
+            <Network ID="vec1" Version="0.0.0" CompileChannelAmount="16"/>
+          </Networks>
+          <UIData>
+            <ContentProperties DeviceType="Desktop"/>
+          </UIData>
+        </Processor>
+        <Processor Type="ScriptFX" ID="Pan" Bypassed="0" NumSliderPacks="1">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="16" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
+                         Channel2="2" Send2="-1" Channel3="3" Send3="-1" Channel4="4"
+                         Send4="-1" Channel5="5" Send5="-1" Channel6="6" Send6="-1" Channel7="7"
+                         Send7="-1" Channel8="8" Send8="-1" Channel9="9" Send9="-1" Channel10="10"
+                         Send10="-1" Channel11="11" Send11="-1" Channel12="12" Send12="-1"
+                         Channel13="13" Send13="-1" Channel14="14" Send14="-1" Channel15="15"
+                         Send15="-1"/>
+          <Content/>
+          <Networks>
+            <Network ID="vecP" Version="0.0.0" CompileChannelAmount="16"/>
+          </Networks>
+          <UIData>
+            <ContentProperties DeviceType="Desktop"/>
+          </UIData>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+    <Processor Type="GlobalModulatorContainer" ID="Global Modulator Container1"
+               Bypassed="0" Gain="0.25" Balance="0.0" VoiceLimit="256.0" KillFadeTime="20.0"
+               IconColour="0">
+      <ChildProcessors>
+        <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="Global Modulators" Bypassed="0" Intensity="1.0">
+          <ChildProcessors>
+            <Processor Type="ScriptTimeVariantModulator" ID="fade" Bypassed="0" Intensity="1.0"
+                       Bipolar="0" NumTables="2" NumSliderPacks="1">
+              <ChildProcessors/>
+              <Content/>
+              <Networks>
+                <Network ID="vecfade" Version="0.0.0"/>
+              </Networks>
+              <UIData>
+                <ContentProperties DeviceType="Desktop"/>
+              </UIData>
+            </Processor>
+            <Processor Type="ScriptTimeVariantModulator" ID="stage" Bypassed="0" Intensity="1.0"
+                       Bipolar="0" NumSliderPacks="1">
+              <ChildProcessors/>
+              <Content/>
+              <UIData>
+                <ContentProperties DeviceType="Desktop"/>
+              </UIData>
+            </Processor>
+            <Processor Type="ScriptTimeVariantModulator" ID="StageFitler" Bypassed="0"
+                       Intensity="1.0" Bipolar="0" NumSliderPacks="1">
+              <ChildProcessors/>
+              <Content/>
+              <Networks>
+                <Network ID="StagesFilter" Version="0.0.0"/>
+              </Networks>
+              <UIData>
+                <ContentProperties DeviceType="Desktop"/>
+              </UIData>
+            </Processor>
+            <Processor Type="ScriptTimeVariantModulator" ID="StagePan" Bypassed="0"
+                       Intensity="1.0" Bipolar="0" NumTables="1" NumSliderPacks="1">
+              <ChildProcessors/>
+              <Content/>
+              <Networks>
+                <Network ID="StagesPan" Version="0.0.0"/>
+              </Networks>
+              <UIData>
+                <ContentProperties DeviceType="Desktop"/>
+              </UIData>
+            </Processor>
+            <Processor Type="ScriptTimeVariantModulator" ID="Gmod1" Bypassed="0" Intensity="1.0"
+                       Bipolar="0" NumTables="4" NumSliderPacks="4">
+              <ChildProcessors/>
+              <Content/>
+              <Networks>
+                <Network ID="polymod3" AllowPolyphonic="1" Version="0.0.0" CompileChannelAmount="1"
+                         HasTail="0"/>
+              </Networks>
+              <UIData>
+                <ContentProperties DeviceType="Desktop"/>
+              </UIData>
+            </Processor>
+            <Processor Type="ScriptTimeVariantModulator" ID="Gmod2" Bypassed="0" Intensity="1.0"
+                       Bipolar="0" NumTables="4" NumSliderPacks="4">
+              <ChildProcessors/>
+              <Content/>
+              <Networks>
+                <Network ID="polymod3" AllowPolyphonic="1" Version="0.0.0" CompileChannelAmount="1"
+                         HasTail="0"/>
+              </Networks>
+              <UIData>
+                <ContentProperties DeviceType="Desktop"/>
+              </UIData>
+            </Processor>
+          </ChildProcessors>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0.0">
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="EffectChain" ID="FX" Bypassed="0">
+          <ChildProcessors/>
+        </Processor>
+      </ChildProcessors>
+      <RoutingMatrix NumSourceChannels="16" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
+                     Channel2="2" Send2="-1" Channel3="3" Send3="-1" Channel4="4"
+                     Send4="-1" Channel5="5" Send5="-1" Channel6="6" Send6="-1" Channel7="7"
+                     Send7="-1" Channel8="8" Send8="-1" Channel9="9" Send9="-1" Channel10="10"
+                     Send10="-1" Channel11="11" Send11="-1" Channel12="12" Send12="-1"
+                     Channel13="13" Send13="-1" Channel14="14" Send14="-1" Channel15="15"
+                     Send15="-1"/>
+    </Processor>
+  </ChildProcessors>
+  <RoutingMatrix NumSourceChannels="16" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
+                 Channel2="2" Send2="-1" Channel3="3" Send3="-1" Channel4="4"
+                 Send4="-1" Channel5="5" Send5="-1" Channel6="6" Send6="-1" Channel7="7"
+                 Send7="-1" Channel8="8" Send8="-1" Channel9="9" Send9="-1" Channel10="10"
+                 Send10="-1" Channel11="11" Send11="-1" Channel12="12" Send12="-1"
+                 Channel13="13" Send13="-1" Channel14="14" Send14="-1" Channel15="15"
+                 Send15="-1"/>
+  <macro_controls>
+    <macro name="Macro 1" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 2" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 3" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 4" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 5" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 6" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 7" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 8" value="0.0" midi_cc="-1"/>
+  </macro_controls>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Processor>

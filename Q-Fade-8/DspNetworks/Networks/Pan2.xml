@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="Pan2" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="Pan2" Bypassed="0" ShowParameters="1">
+    <Nodes>
+      <Node ID="chain" FactoryPath="container.chain" Bypassed="0">
+        <Nodes>
+          <Node ID="global_cable" FactoryPath="routing.global_cable" Bypassed="0"
+                NodeColour="4289873800">
+            <Properties>
+              <Property ID="Connection" Value="tablemod"/>
+            </Properties>
+            <ModulationTargets>
+              <Connection NodeId="cable_pack" ParameterId="Value"/>
+            </ModulationTargets>
+            <Parameters>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+            </Parameters>
+          </Node>
+          <Node ID="cable_pack" FactoryPath="control.cable_pack" Bypassed="0">
+            <ModulationTargets>
+              <Connection NodeId="jpanner" ParameterId="Pan"/>
+              <Connection NodeId="jpanner6" ParameterId="Pan"/>
+            </ModulationTargets>
+            <ComplexData>
+              <SliderPacks>
+                <SliderPack Index="0"/>
+              </SliderPacks>
+            </ComplexData>
+            <Parameters>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+            </Parameters>
+          </Node>
+          <Node ID="multi" FactoryPath="container.multi" Bypassed="0">
+            <Nodes>
+              <Node ID="chain1" FactoryPath="container.chain" Bypassed="0">
+                <Nodes>
+                  <Node ID="split" FactoryPath="container.split" Bypassed="0">
+                    <Nodes>
+                      <Node ID="jpanner" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner6" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+        </Nodes>
+        <Parameters/>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter ID="rule" MinValue="0.0" MaxValue="6.0" StepSize="0.1" Value="1.0">
+        <Connections/>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>
