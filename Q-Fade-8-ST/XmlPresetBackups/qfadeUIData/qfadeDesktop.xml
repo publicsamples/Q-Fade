@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ContentProperties DeviceType="Desktop">
-  <Component type="ScriptPanel" id="ScriptPanel1" x="-9.0" y="-20.0" width="750.0"
-             height="670.0" bgColour="4294905101" itemColour="4292264069"
-             itemColour2="4292257669" locked="1" textColour="4278190080" borderSize="4.0"
-             borderRadius="0.0"/>
-  <Component type="ScriptLabel" id="SCAN" x="74.0" y="218.0" fontSize="20.0"
-             text="XFADE" textColour="4278190080" width="80.0" editable="0"/>
+  <Component type="ScriptPanel" id="ScriptPanel1" x="0.0" y="0.0" width="630.0"
+             height="540.0" bgColour="4294905101" itemColour="4292264069"
+             itemColour2="4292257669" locked="1" textColour="4283580164" borderRadius="20.0"
+             borderSize="5.0"/>
+  <Component type="ScriptLabel" id="X-FADE" x="73.0" y="12.0" fontSize="20.0"
+             textColour="4292333992" width="80.0" editable="0" fontName="Montserrat"
+             bgColour="4283580164"/>
   <Component type="ScriptLabel" id="SMOOTH" x="26.0" y="300.0" width="60.0"
-             height="20.0" textColour="4278190080" editable="0"/>
+             height="20.0" textColour="4278190080" editable="0" fontName="Montserrat"/>
   <Component type="ScriptLabel" id="MOD AMOUNT" x="120.0" y="301.0" width="80.0"
-             height="20.0" textColour="4278190080" editable="0"/>
-  <Component type="ScriptLabel" id="MOD AMOUNT2" x="74.0" y="363.0" width="80.0"
-             height="20.0" text="FADE MODE" textColour="4278190080" editable="0"/>
-  <Component type="ScriptSlider" id="Scan" x="17.0" y="10.0" stepSize="0.009999999776482582"
+             height="20.0" textColour="4278190080" editable="0" fontName="Montserrat"/>
+  <Component type="ScriptLabel" id="MOD AMOUNT2" x="70.0" y="363.0" width="80.0"
+             height="20.0" text="FADE MODE" textColour="4278190080" editable="0"
+             fontName="Montserrat"/>
+  <Component type="ScriptSlider" id="Scan" x="17.0" y="49.0" stepSize="0.009999999776482582"
              width="200.0" height="200.0" processorId="fade" parameterId="scan"
              text="Xfade" numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
              scaleFactor="0.8500000238418579" middlePosition="0.5" defaultValue="0.5"
@@ -22,21 +24,21 @@
              processorId="fade" parameterId="smooth" width="50.0" height="50.0"
              numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
              scaleFactor="0.2000000029802322" isPluginParameter="1" pluginParameterName="XfadeSmooth"/>
-  <Component type="ScriptComboBox" id="ComboBox1" x="74.0" y="331.0" max="4"
-             text="VolMode" items="Switch&#10;Linear&#10;RMS&#10;Stack" processorId="fade"
+  <Component type="ScriptComboBox" id="ComboBox1" x="75.0" y="323.0" max="4"
+             text="VolMode" items="SWITCH&#10;LINEAR&#10;RMS&#10;STACCK" processorId="fade"
              parameterId="fadetype" bgColour="3123520264" itemColour="3121811203"
-             itemColour2="3121942791" textColour="3136677047" width="80.0"
-             height="30.0" isPluginParameter="1" pluginParameterName="XfadeMode"/>
-  <Component type="ScriptPanel" id="FxPack" x="226.0" y="6.0" width="390.0"
+             itemColour2="3121942791" textColour="3136677047" width="70" height="40"
+             isPluginParameter="1" pluginParameterName="XfadeMode" fontName="Montserrat"/>
+  <Component type="ScriptPanel" id="FxPack" x="226.0" y="9.0" width="390.0"
              height="240.0" borderRadius="11.0">
-    <Component type="ScriptLabel" id="FX" x="297.0" y="6.0" parentComponent="FxPack"
-               width="90.0" height="20.0" fontSize="20.0" textColour="4278190080"
-               editable="0"/>
-    <Component type="ScriptSliderPack" id="FilterSliders" x="9.0" y="10.0" processorId="StageFitler"
-               sliderAmount="8.0" parentComponent="FxPack" width="290.0" height="150.0"
+    <Component type="ScriptLabel" id="FX" x="298.0" y="8.0" parentComponent="FxPack"
+               width="90.0" height="20.0" fontSize="20.0" editable="0" fontName="Montserrat"
+               bgColour="4283580164" textColour="4292333992"/>
+    <Component type="ScriptSliderPack" id="FilterSliders" x="12" y="8.0" processorId="StageFitler"
+               sliderAmount="8.0" parentComponent="FxPack" width="280" height="160"
                itemColour="2005148451" itemColour2="14142113" bgColour="1379340"
                textColour="0"/>
-    <Component type="ScriptSlider" id="FxOffset" x="321.0" y="31.0" width="50.0"
+    <Component type="ScriptSlider" id="FxOffset" x="321" y="37.0" width="50.0"
                height="50.0" parentComponent="FxPack" processorId="StageFitler"
                parameterId="OffSet" numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                scaleFactor="0.2000000029802322" isPluginParameter="1" pluginParameterName="FxOffset"/>
@@ -45,45 +47,45 @@
                itemColour2="285212672" bgColour="16777215" textColour="16777215">
       <Component type="ScriptLabel" id="FXOFFSET2" x="11.0" y="41.0" parentComponent="FilterSettings"
                  width="80.0" height="20.0" text="FILTER TYPE" textColour="4278190080"
-                 editable="0"/>
+                 editable="0" fontName="Montserrat"/>
       <Component type="ScriptLabel" id="FXOFFSET3" x="90.0" y="42.0" parentComponent="FilterSettings"
                  width="80.0" height="20.0" text="RESONANCE" textColour="4278190080"
-                 editable="0"/>
+                 editable="0" fontName="Montserrat"/>
       <Component type="ScriptSlider" id="FilterResonance" x="111.0" y="7.0" parentComponent="FilterSettings"
                  processorId="Filter" parameterId="res" numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                  scaleFactor="0.1500000059604645" width="40.0" height="40.0" pluginParameterName="FilterResonance"
                  isPluginParameter="1"/>
-      <Component type="ScriptComboBox" id="FilterType" x="13.0" y="10.0" max="4"
-                 text="VolMode" items="LowPass&#10;HighPass&#10;BandPass&#10;Notch"
+      <Component type="ScriptComboBox" id="FilterType" x="9.0" y="2.0" max="4"
+                 text="VolMode" items="LOWPASS&#10;HIGHPASS&#10;BANDPASS&#10;NOTCH"
                  processorId="Filter" parameterId="FilType" parentComponent="FilterSettings"
-                 width="80.0" height="30.0" bgColour="3123520264" itemColour="3121811203"
+                 width="90" height="40" bgColour="3123520264" itemColour="3121811203"
                  itemColour2="3121942791" textColour="3136677047" isPluginParameter="1"
-                 pluginParameterName="FiiterMode"/>
+                 pluginParameterName="FiiterMode" fontName="Montserrat"/>
     </Component>
-    <Component type="ScriptSlider" id="FxOffsetMod" x="321.0" y="104.0" width="50.0"
+    <Component type="ScriptSlider" id="FxOffsetMod" x="321" y="110.0" width="50.0"
                height="50.0" parentComponent="FxPack" processorId="StageFitler"
                parameterId="Mod" min="-1.0" middlePosition="0.0" numStrips="206.0"
                filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png" scaleFactor="0.2000000029802322"
                isPluginParameter="1" pluginParameterName="FxMod"/>
-    <Component type="ScriptLabel" id="FXOFFSET" x="310.0" y="79.0" parentComponent="FxPack"
+    <Component type="ScriptLabel" id="FXOFFSET" x="307.0" y="85.0" parentComponent="FxPack"
                width="72.0" height="20.0" text="OFFSET" textColour="4278190080"
-               editable="0"/>
-    <Component type="ScriptLabel" id="FXOFFSET1" x="304.0" y="153.0" parentComponent="FxPack"
+               editable="0" fontName="Montserrat"/>
+    <Component type="ScriptLabel" id="FXOFFSET1" x="304.0" y="159.0" parentComponent="FxPack"
                width="80.0" height="20.0" text="MOD AMOUNT" textColour="4278190080"
-               editable="0"/>
-    <Component type="ScriptLabel" id="FXOFFSET4" x="303.0" y="215.0" parentComponent="FxPack"
+               editable="0" fontName="Montserrat"/>
+    <Component type="ScriptLabel" id="FXOFFSET4" x="303.0" y="219.0" parentComponent="FxPack"
                width="80.0" height="20.0" text="MODE" textColour="4278190080"
-               editable="0"/>
+               editable="0" fontName="Montserrat"/>
     <Component type="ScriptPanel" id="EqSettings" x="6.0" y="173.0" width="290.0"
                height="60.0" parentComponent="FxPack" itemColour="318767104"
                itemColour2="285212672" bgColour="16777215" textColour="16777215"
                visible="0">
       <Component type="ScriptLabel" id="FXOFFSET5" x="11.0" y="41.0" parentComponent="EqSettings"
                  width="80.0" height="20.0" text="EQ TYPE" textColour="4278190080"
-                 editable="0"/>
+                 editable="0" fontName="Montserrat"/>
       <Component type="ScriptLabel" id="FXOFFSET6" x="90.0" y="42.0" parentComponent="EqSettings"
                  width="80.0" height="20.0" text="RESONANCE" textColour="4278190080"
-                 editable="0"/>
+                 editable="0" fontName="Montserrat"/>
       <Component type="ScriptSlider" id="FilterResonance1" x="111.0" y="7.0" parentComponent="EqSettings"
                  processorId="EQ" parameterId="res" numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                  scaleFactor="0.1500000059604645" width="40.0" height="40.0" pluginParameterName="EqPeak"/>
@@ -99,27 +101,27 @@
                parameterId="OffSet" numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                scaleFactor="0.2000000029802322" isPluginParameter="1" pluginParameterName="FxOffset"/>
   </Component>
-  <Component type="ScriptComboBox" id="FxType" x="536.0" y="192.0" width="70.0"
-             height="30.0" max="2" items="Filter&#10;EQ" bgColour="3123520264"
+  <Component type="ScriptComboBox" id="FxType" x="536.0" y="188.0" width="70.0"
+             height="40.0" max="2" items="FILTER&#10;EQ" bgColour="3123520264"
              itemColour="3121811203" itemColour2="3121942791" textColour="3136677047"
-             pluginParameterName="FxMode" isPluginParameter="1"/>
+             pluginParameterName="FxMode" isPluginParameter="1" fontName="Montserrat"/>
   <Component type="ScriptPanel" id="PanPack" x="225.0" y="254.0" width="390.0"
              height="125.0" borderRadius="11.0">
-    <Component type="ScriptSlider" id="FxOffset2" x="326.0" y="34.0" width="50.0"
+    <Component type="ScriptSlider" id="FxOffset2" x="321" y="42.0" width="50.0"
                height="50.0" parentComponent="PanPack" processorId="StagePan"
                parameterId="OffSet" numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                scaleFactor="0.2000000029802322" isPluginParameter="1" pluginParameterName="FxOffset"
                defaultValue="0.5" middlePosition="0.5"/>
-    <Component type="ScriptSliderPack" id="PanSliders" x="9.0" y="8.0" processorId="StagePan"
-               parentComponent="PanPack" width="290.0" height="110.0" itemColour="2002628295"
+    <Component type="ScriptSliderPack" id="PanSliders" x="12" y="8.0" processorId="StagePan"
+               parentComponent="PanPack" width="280" height="110" itemColour="2002628295"
                itemColour2="16777215" sliderAmount="8.0" showValueOverlay="0"
                defaultValue="0.5"/>
-    <Component type="ScriptLabel" id="PAN" x="301.0" y="5.0" width="90.0" height="20.0"
-               parentComponent="PanPack" fontSize="20.0" textColour="4278190080"
-               editable="0"/>
-    <Component type="ScriptLabel" id="PANRULE" x="302.0" y="97.0" width="90.0"
-               height="20.0" parentComponent="PanPack" text="RULE" textColour="4278190080"
-               editable="0"/>
+    <Component type="ScriptLabel" id="PAN" x="298.0" y="9.0" width="90.0" height="20.0"
+               parentComponent="PanPack" fontSize="20.0" editable="0" fontName="Montserrat"
+               bgColour="4283580164" textColour="4292333992"/>
+    <Component type="ScriptLabel" id="PANRULE" x="298.0" y="97.0" width="90.0"
+               height="20.0" parentComponent="PanPack" text="OFFSET" textColour="4278190080"
+               editable="0" fontName="Montserrat"/>
   </Component>
   <Component type="ScriptPanel" id="GlobalMod1" x="12.0" y="386.0" width="300.0"
              height="145.0" bgColour="2269515780" itemColour="2957381636"
@@ -224,12 +226,12 @@
     <Component type="ScriptLabel" id="SCAN MOD" x="164.0" y="5.0" width="110.0"
                height="20.0" fontSize="20.0" parentComponent="GlobalMod1" editable="0"
                fontName="Montserrat" textColour="3136677047" itemColour2="3136677047"/>
-    <Component type="ScriptComboBox" id="MODSEL3" x="10.0" y="78.0" width="60.0"
-               height="30.0" parentComponent="GlobalMod1" bgColour="3123520264"
+    <Component type="ScriptComboBox" id="MODSEL3" x="8.0" y="76" width="70"
+               height="40" parentComponent="GlobalMod1" bgColour="3123520264"
                itemColour2="3121942791" itemColour="3121811203" textColour="3136677047"
-               text="modmode1" min="0.0" items="LFO&#10;table&#10;8 step&#10;"
-               max="3" fontSize="11.0" pluginParameterName="ScanModMode"/>
-    <Component type="ScriptButton" id="TrigMode3" x="87.0" y="78.0" width="30.0"
+               text="modmode1" min="0.0" items="LFO&#10;TABLE&#10;8 STEP" max="3"
+               fontSize="11.0" pluginParameterName="ScanModMode" fontName="Montserrat"/>
+    <Component type="ScriptButton" id="TrigMode3" x="87.0" y="76" width="30.0"
                height="30.0" filmstripImage="{PROJECT_FOLDER}button6.png" scaleFactor="0.1800000071525574"
                isVertical="0" parentComponent="GlobalMod1" processorId="Gmod1"
                parameterId="trigin" bgColour="16777215" isPluginParameter="1"
@@ -246,8 +248,8 @@
     <Component type="ScriptLabel" id="Label48" x="10.0" y="51.0" width="60.0"
                height="15.0" alignment="left" text="TEMPO" editable="0" parentComponent="GlobalMod1"
                fontName="Montserrat" textColour="3136677047" itemColour2="3136677047"/>
-    <Component type="ScriptLabel" id="TrigLabel1" x="60.0" y="119.0" width="90.0"
-               height="20.0" alignment="left" text="DAW SYNC" editable="0" parentComponent="GlobalMod1"
+    <Component type="ScriptLabel" id="TrigLabel1" x="83.0" y="106.0" width="50"
+               height="35" alignment="left" text="DAW SYNC" editable="0" parentComponent="GlobalMod1"
                fontName="Montserrat" textColour="3136677047" itemColour2="3136677047"/>
     <Component type="ScriptPanel" id="LFO1" x="143.0" y="27.0" width="150.0"
                height="110.0" parentComponent="GlobalMod1" itemColour="4291273585"
@@ -283,7 +285,7 @@
                  bgColour="4280492571" itemColour2="4288627996" customColours="1"
                  processorId="Gmod1"/>
     </Component>
-    <Component type="ScriptLabel" id="Label70" x="10.0" y="121.0" width="60.0"
+    <Component type="ScriptLabel" id="Label70" x="17.0" y="121.0" width="60.0"
                height="15.0" alignment="left" text="MODE" editable="0" parentComponent="GlobalMod1"
                fontName="Montserrat" textColour="3136677047" itemColour2="3136677047"/>
     <Component type="ScriptLabel" id="synclabel3" x="90.0" y="111.0" width="40.0"
@@ -411,13 +413,13 @@
                height="20.0" fontSize="20.0" parentComponent="GlobalMod2" editable="0"
                fontName="Montserrat" textColour="3136677047" itemColour2="3136677047"
                text="FX MOD"/>
-    <Component type="ScriptComboBox" id="MODSEL4" x="10.0" y="78.0" width="60.0"
-               height="30.0" parentComponent="GlobalMod2" bgColour="3123520264"
+    <Component type="ScriptComboBox" id="MODSEL4" x="10.0" y="76" width="70.0"
+               height="40.0" parentComponent="GlobalMod2" bgColour="3123520264"
                itemColour2="3121942791" itemColour="3121811203" textColour="3136677047"
-               text="modmode1" min="0.0" items="LFO&#10;table&#10;8 step&#10;"
+               text="modmode1" min="0.0" items="LFO&#10;TABLE&#10;8 STEP&#10;"
                max="3" fontSize="11.0" processorId="Gmod2" isPluginParameter="1"
-               pluginParameterName="FxModMode"/>
-    <Component type="ScriptButton" id="TrigMode4" x="87.0" y="78.0" width="30.0"
+               pluginParameterName="FxModMode" fontName="Montserrat"/>
+    <Component type="ScriptButton" id="TrigMode4" x="88.0" y="76" width="30.0"
                height="30.0" filmstripImage="{PROJECT_FOLDER}button6.png" scaleFactor="0.1800000071525574"
                isVertical="0" parentComponent="GlobalMod2" processorId="Gmod2"
                parameterId="trigin" bgColour="16777215" isPluginParameter="1"
@@ -434,8 +436,8 @@
     <Component type="ScriptLabel" id="Label50" x="10.0" y="51.0" width="60.0"
                height="15.0" alignment="left" text="TEMPO" editable="0" parentComponent="GlobalMod2"
                fontName="Montserrat" textColour="3136677047" itemColour2="3136677047"/>
-    <Component type="ScriptLabel" id="TrigLabel2" x="60.0" y="119.0" width="90.0"
-               height="20.0" alignment="left" text="DAW SYNC" editable="0" parentComponent="GlobalMod2"
+    <Component type="ScriptLabel" id="TrigLabel2" x="83.0" y="105.0" width="40"
+               height="35" alignment="left" text="DAW SYNC" editable="0" parentComponent="GlobalMod2"
                fontName="Montserrat" textColour="3136677047" itemColour2="3136677047"/>
     <Component type="ScriptPanel" id="LFO2" x="143.0" y="27.0" width="150.0"
                height="110.0" parentComponent="GlobalMod2" itemColour="4291273585"
@@ -471,7 +473,7 @@
                  bgColour="4280492571" itemColour2="4288627996" customColours="1"
                  processorId="Gmod2"/>
     </Component>
-    <Component type="ScriptLabel" id="Label72" x="10.0" y="121.0" width="60.0"
+    <Component type="ScriptLabel" id="Label72" x="18.0" y="120.0" width="60.0"
                height="15.0" alignment="left" text="MODE" editable="0" parentComponent="GlobalMod2"
                fontName="Montserrat" textColour="3136677047" itemColour2="3136677047"/>
     <Component type="ScriptLabel" id="synclabel4" x="90.0" y="111.0" width="40.0"

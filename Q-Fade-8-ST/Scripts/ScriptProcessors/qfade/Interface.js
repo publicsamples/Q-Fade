@@ -1,5 +1,7 @@
 Content.makeFrontInterface(630, 540);
 
+Engine.loadFontAs("{PROJECT_FOLDER}Montserrat-Medium.ttf", "Montserrat");
+
 const var Gain = Synth.getEffect("Gain");
 const var Filter = Synth.getEffect("Filter");
 const var EQ = Synth.getEffect("EQ");

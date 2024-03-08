@@ -16,13 +16,13 @@
             <Control type="ScriptSlider" id="FxOffset" value="1.0"/>
             <Control type="ScriptSlider" id="FilterResonance" value="0.3600000143051147"/>
             <Control type="ScriptComboBox" id="FilterType" value="1.0"/>
-            <Control type="ScriptSlider" id="FxOffsetMod" value="0.001600097632035613"/>
+            <Control type="ScriptSlider" id="FxOffsetMod" value="0.0"/>
             <Control type="ScriptSlider" id="FilterResonance1" value="0.3353062868118286"/>
             <Control type="ScriptComboBox" id="FilterType1" value="1.0"/>
             <Control type="ScriptSlider" id="FxOffset1" value="1.0"/>
-            <Control type="ScriptComboBox" id="FxType" value="1.0"/>
+            <Control type="ScriptComboBox" id="FxType" value="2.0"/>
             <Control type="ScriptSlider" id="FxOffset2" value="1.0"/>
-            <Control type="ScriptSliderPack" id="PanSliders" value="0" data="32.....+....7C...vO....+....7C...vO....+....7C"/>
+            <Control type="ScriptSliderPack" id="PanSliders" value="0.0" data="32.....+....7C...vO....+....7C...vO....+....7C"/>
             <Control type="ScriptSlider" id="TempoS3" value="0.0"/>
             <Control type="ScriptTable" id="ScriptTable17" value="0.0" data=""/>
             <Control type="ScriptTable" id="ScriptTable29" value="0.0" data=""/>
@@ -40,7 +40,7 @@
             <Control type="ScriptButton" id="TrigMode3" value="0.0"/>
             <Control type="ScriptSlider" id="ScriptSlider18" value="1.0"/>
             <Control type="ScriptComboBox" id="SOURC20" value="1.0"/>
-            <Control type="ScriptSliderPack" id="ScriptSliderPack9" value="7" data="32.67cs9.pFo5yO0flO...f+nDCL7C...3OV4P.+......"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack9" value="7.0" data="32.67cs9.pFo5yO0flO...f+nDCL7C...3OV4P.+......"/>
             <Control type="ScriptTable" id="ScriptTable21" value="0.0" data="60...............vOPvOv9rfsf8SjgJqOQuPO+PeRe3C...3OlYlY+....9SDv2rO...f+.....fl3Y0O"/>
             <Control type="ScriptSlider" id="TempoF3" value="0.0"/>
             <Control type="ScriptSlider" id="Knob3" value="-2.235174179077148e-8"/>
@@ -61,7 +61,7 @@
             <Control type="ScriptButton" id="TrigMode4" value="0.0"/>
             <Control type="ScriptSlider" id="ScriptSlider19" value="5.0"/>
             <Control type="ScriptComboBox" id="SOURC21" value="1.0"/>
-            <Control type="ScriptSliderPack" id="ScriptSliderPack10" value="7" data="32.67cs9.pFo5yO0flO...f+nDCL7C...3OV4P.+......"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack10" value="7.0" data="32.67cs9.pFo5yO0flO...f+nDCL7C...3OV4P.+......"/>
             <Control type="ScriptTable" id="ScriptTable22" value="0.0" data="60...............vOcibi9HhHh7SWOJrOD7C79vppp3C...3OwNwN+LyLy7iGEttO...f+.....vc2c2O"/>
             <Control type="ScriptSlider" id="TempoF4" value="0.0"/>
           </Content>
