@@ -9,7 +9,7 @@
         <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
           <ChildProcessors/>
           <Content>
-            <Control type="ScriptSlider" id="Scan" value="0.2699999809265137"/>
+            <Control type="ScriptSlider" id="Scan" value="0.0"/>
             <Control type="ScriptSlider" id="VolSmooth" value="0.03999999910593033"/>
             <Control type="ScriptComboBox" id="ComboBox1" value="1.0"/>
             <Control type="ScriptSliderPack" id="FilterSliders" value="6.0" data="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
@@ -40,7 +40,7 @@
             <Control type="ScriptButton" id="TrigMode3" value="0.0"/>
             <Control type="ScriptSlider" id="ScriptSlider18" value="1.0"/>
             <Control type="ScriptComboBox" id="SOURC20" value="1.0"/>
-            <Control type="ScriptSliderPack" id="ScriptSliderPack9" value="7.0" data="32.67cs9.pFo5yO0flO...f+nDCL7C...3OV4P.+......"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack9" value="7" data="32.67cs9.pFo5yO0flO...f+nDCL7C...3OV4P.+......"/>
             <Control type="ScriptTable" id="ScriptTable21" value="0.0" data="60...............vOPvOv9rfsf8SjgJqOQuPO+PeRe3C...3OlYlY+....9SDv2rO...f+.....fl3Y0O"/>
             <Control type="ScriptSlider" id="TempoF3" value="0.0"/>
             <Control type="ScriptSlider" id="Knob3" value="-2.235174179077148e-8"/>
@@ -61,7 +61,7 @@
             <Control type="ScriptButton" id="TrigMode4" value="0.0"/>
             <Control type="ScriptSlider" id="ScriptSlider19" value="5.0"/>
             <Control type="ScriptComboBox" id="SOURC21" value="1.0"/>
-            <Control type="ScriptSliderPack" id="ScriptSliderPack10" value="7.0" data="32.67cs9.pFo5yO0flO...f+nDCL7C...3OV4P.+......"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack10" value="7" data="32.67cs9.pFo5yO0flO...f+nDCL7C...3OV4P.+......"/>
             <Control type="ScriptTable" id="ScriptTable22" value="0.0" data="60...............vOcibi9HhHh7SWOJrOD7C79vppp3C...3OwNwN+LyLy7iGEttO...f+.....vc2c2O"/>
             <Control type="ScriptSlider" id="TempoF4" value="0.0"/>
           </Content>
@@ -77,7 +77,7 @@
     </Processor>
     <Processor Type="EffectChain" ID="FX" Bypassed="0">
       <ChildProcessors>
-        <Processor Type="ScriptFX" ID="Filter" Bypassed="0" NumTables="1" NumSliderPacks="1">
+        <Processor Type="ScriptFX" ID="Filter" Bypassed="1" NumTables="1" NumSliderPacks="1">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="16" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
                          Channel2="2" Send2="-1" Channel3="3" Send3="-1" Channel4="4"
@@ -111,7 +111,7 @@
             <ContentProperties DeviceType="Desktop"/>
           </UIData>
         </Processor>
-        <Processor Type="ScriptFX" ID="EQ" Bypassed="1">
+        <Processor Type="ScriptFX" ID="EQ" Bypassed="0">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="16" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
                          Channel2="2" Send2="-1" Channel3="3" Send3="-1" Channel4="4"
