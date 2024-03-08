@@ -11,20 +11,48 @@ const var FxSet = [];
 
 FxSet[0] = Content.getComponent("FilterSettings");
 FxSet[1] = Content.getComponent("EqSettings");
+FxSet[2] = Content.getComponent("GranSettings");
 
 const var Fx = [];
 
-Fx[0] = Synth.getEffect("EQ");
-Fx[1] = Synth.getEffect("Filter");
-
+Fx[0] = Synth.getEffect("Filter");
+Fx[1] = Synth.getEffect("EQ");
+Fx[2] = Synth.getEffect("gran");
 
 inline function onFxTypeControl(component, value)
 {
 	for (i = 0; i < FxSet.length; i++)
         FxSet[i].showControl(value - 1 == i);
         
-        for (i = 0; i < Fx.length; i++)
-                Fx[i].setBypassed(value - 1 == i);
+if(value == 1)
+      {
+      
+ 
+            Fx[0].setBypassed(0);  
+            Fx[1].setBypassed(1);   
+            Fx[2].setBypassed(1);  
+       
+               
+      }
+      
+      	if(value == 2)
+      {
+      
+               Fx[0].setBypassed(1);  
+            Fx[1].setBypassed(0);   
+            Fx[2].setBypassed(1);  
+        
+      }
+      
+      if(value == 3)
+      {
+      
+       		 Fx[0].setBypassed(1);  
+            Fx[1].setBypassed(1);   
+            Fx[2].setBypassed(0);  
+        
+      }  
+        
 };
 
 Content.getComponent("FxType").setControlCallback(onFxTypeControl);
@@ -156,6 +184,29 @@ inline function onMODSEL4Control(component, value)
 
 
 Content.getComponent("MODSEL4").setControlCallback(onMODSEL4Control);
+
+const var GTIME = Content.getComponent("GTIME");
+const var GTEMPO = Content.getComponent("GTEMPO");
+const var TIMEPABEL = Content.getComponent("TIMEPABEL");
+const var TEMPOPABEL = Content.getComponent("TEMPOPABEL");
+const var GDIV = Content.getComponent("GDIV");
+const var DIVLABEL = Content.getComponent("DIVLABEL");
+//const var gran = Synth.getEffect("gran");
+
+inline function onGSYNCControl(component, value)
+{
+			GTIME.showControl(1-value);
+			GTEMPO.showControl(value);
+			TIMEPABEL.showControl(1-value);
+			TEMPOPABEL.showControl(value);
+			GDIV.showControl(value);
+			DIVLABEL.showControl(value);
+	//		gran.setAttribute(gran.Sync, value);
+};
+
+Content.getComponent("GSYNC").setControlCallback(onGSYNCControl);
+
+
 function onNoteOn()
 {
 	

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="ftest" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="ftest" Bypassed="0">
+    <Nodes>
+      <Node ID="multi" FactoryPath="container.multi" Bypassed="0">
+        <Nodes>
+          <Node ID="faust" FactoryPath="core.faust" Bypassed="0">
+            <Properties>
+              <Property ID="ClassId" Value="granular"/>
+              <Property ID="NumParameters" Value="0"/>
+            </Properties>
+            <Parameters>
+              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                         ID="decal" Value="0.0"/>
+              <Parameter MinValue="0.0" MaxValue="2.0" StepSize="0.001000000047497451"
+                         ID="feedback" Value="0.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                         ID="population" Value="1.0"/>
+              <Parameter MinValue="0.125" MaxValue="4.0" StepSize="0.001000000047497451"
+                         ID="speed" Value="1.0"/>
+              <Parameter MinValue="4.0" MaxValue="12000.0" StepSize="0.001000000047497451"
+                         ID="taille" Value="10.0"/>
+            </Parameters>
+            <SwitchTargets/>
+          </Node>
+        </Nodes>
+        <Parameters/>
+      </Node>
+    </Nodes>
+    <Parameters/>
+  </Node>
+</Network>
