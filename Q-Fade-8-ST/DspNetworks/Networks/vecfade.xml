@@ -1008,7 +1008,7 @@
                     <Parameters/>
                   </Node>
                   <Node ID="sb10" FactoryPath="container.soft_bypass" NodeColour="4284971161"
-                        Bypassed="0" Folded="1">
+                        Bypassed="0">
                     <Nodes>
                       <Node ID="chain112" FactoryPath="container.chain" Bypassed="0">
                         <Nodes>

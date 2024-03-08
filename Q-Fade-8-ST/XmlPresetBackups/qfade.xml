@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Processor Type="SynthChain" ID="qfade" Bypassed="0" Gain="1.0" Balance="0.0"
-           VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0" packageName=""
-           BuildVersion="650">
+<Processor Type="SynthChain" ID="qfade" Bypassed="0" Gain="0.06683438271284103"
+           Balance="0.0" VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0"
+           packageName="" BuildVersion="650">
   <ChildProcessors>
     <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
       <ChildProcessors>
         <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
           <ChildProcessors/>
           <Content>
-            <Control type="ScriptSlider" id="Scan" value="0.0"/>
+            <Control type="ScriptSlider" id="Scan" value="0.2699999809265137"/>
             <Control type="ScriptSlider" id="VolSmooth" value="0.03999999910593033"/>
             <Control type="ScriptComboBox" id="ComboBox1" value="1.0"/>
-            <Control type="ScriptSliderPack" id="FilterSliders" value="5.0" data="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
+            <Control type="ScriptSliderPack" id="FilterSliders" value="6.0" data="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
             <Control type="ScriptSlider" id="FxOffset" value="1.0"/>
             <Control type="ScriptSlider" id="FilterResonance" value="0.3600000143051147"/>
-            <Control type="ScriptComboBox" id="FilterType" value="2.0"/>
-            <Control type="ScriptSlider" id="FxOffsetMod" value="0.0"/>
+            <Control type="ScriptComboBox" id="FilterType" value="1.0"/>
+            <Control type="ScriptSlider" id="FxOffsetMod" value="0.001600097632035613"/>
             <Control type="ScriptSlider" id="FilterResonance1" value="0.3353062868118286"/>
             <Control type="ScriptComboBox" id="FilterType1" value="1.0"/>
+            <Control type="ScriptSlider" id="FxOffset1" value="1.0"/>
             <Control type="ScriptComboBox" id="FxType" value="1.0"/>
-            <Control type="ScriptSliderPack" id="PanSliders" value="4.0" data="32.....+....7C...vO....+....7C...vO....+....7C"/>
-            <Control type="ScriptComboBox" id="ScriptComboBox1" value="1.0"/>
+            <Control type="ScriptSlider" id="FxOffset2" value="1.0"/>
+            <Control type="ScriptSliderPack" id="PanSliders" value="0" data="32.....+....7C...vO....+....7C...vO....+....7C"/>
             <Control type="ScriptSlider" id="TempoS3" value="0.0"/>
             <Control type="ScriptTable" id="ScriptTable17" value="0.0" data=""/>
             <Control type="ScriptTable" id="ScriptTable29" value="0.0" data=""/>
@@ -155,7 +156,7 @@
                          Send15="-1"/>
           <Content/>
           <Networks>
-            <Network ID="Pan2" Version="0.0.0"/>
+            <Network ID="vecP" Version="0.0.0" CompileChannelAmount="16"/>
           </Networks>
           <UIData>
             <ContentProperties DeviceType="Desktop"/>
@@ -206,6 +207,9 @@
                        Intensity="1.0" Bipolar="0" NumTables="1" NumSliderPacks="1">
               <ChildProcessors/>
               <Content/>
+              <Networks>
+                <Network ID="StagesPan" Version="0.0.0"/>
+              </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
               </UIData>

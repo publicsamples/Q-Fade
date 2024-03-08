@@ -20,6 +20,7 @@
           <Node ID="cable_pack" FactoryPath="control.cable_pack" Bypassed="0">
             <ModulationTargets>
               <Connection NodeId="jpanner" ParameterId="Pan"/>
+              <Connection NodeId="jpanner6" ParameterId="Pan"/>
             </ModulationTargets>
             <ComplexData>
               <SliderPacks>
@@ -30,11 +31,32 @@
               <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
             </Parameters>
           </Node>
-          <Node ID="jpanner" FactoryPath="jdsp.jpanner" Bypassed="0">
-            <Parameters>
-              <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
-              <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule" Automated="1"/>
-            </Parameters>
+          <Node ID="multi" FactoryPath="container.multi" Bypassed="0">
+            <Nodes>
+              <Node ID="chain1" FactoryPath="container.chain" Bypassed="0">
+                <Nodes>
+                  <Node ID="split" FactoryPath="container.split" Bypassed="0">
+                    <Nodes>
+                      <Node ID="jpanner" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule"/>
+                        </Parameters>
+                      </Node>
+                      <Node ID="jpanner6" FactoryPath="jdsp.jpanner" Bypassed="0">
+                        <Parameters>
+                          <Parameter MinValue="-1.0" MaxValue="1.0" ID="Pan" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="Rule"/>
+                        </Parameters>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
           </Node>
         </Nodes>
         <Parameters/>
@@ -42,9 +64,7 @@
     </Nodes>
     <Parameters>
       <Parameter ID="rule" MinValue="0.0" MaxValue="6.0" StepSize="0.1" Value="1.0">
-        <Connections>
-          <Connection NodeId="jpanner" ParameterId="Rule"/>
-        </Connections>
+        <Connections/>
       </Parameter>
     </Parameters>
   </Node>

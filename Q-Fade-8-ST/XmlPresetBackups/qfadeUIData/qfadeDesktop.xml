@@ -62,7 +62,7 @@
     </Component>
     <Component type="ScriptSlider" id="FxOffsetMod" x="321.0" y="104.0" width="50.0"
                height="50.0" parentComponent="FxPack" processorId="StageFitler"
-               parameterId="OffSet" min="-1.0" middlePosition="0.0" numStrips="206.0"
+               parameterId="Mod" min="-1.0" middlePosition="0.0" numStrips="206.0"
                filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png" scaleFactor="0.2000000029802322"
                isPluginParameter="1" pluginParameterName="FxMod"/>
     <Component type="ScriptLabel" id="FXOFFSET" x="310.0" y="79.0" parentComponent="FxPack"
@@ -94,6 +94,10 @@
                  itemColour2="3121942791" textColour="3136677047" isPluginParameter="1"
                  pluginParameterName="EqType"/>
     </Component>
+    <Component type="ScriptSlider" id="FxOffset1" x="343.0" y="292.0" width="50.0"
+               height="50.0" parentComponent="FxPack" processorId="StageFitler"
+               parameterId="OffSet" numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               scaleFactor="0.2000000029802322" isPluginParameter="1" pluginParameterName="FxOffset"/>
   </Component>
   <Component type="ScriptComboBox" id="FxType" x="536.0" y="192.0" width="70.0"
              height="30.0" max="2" items="Filter&#10;EQ" bgColour="3123520264"
@@ -101,22 +105,21 @@
              pluginParameterName="FxMode" isPluginParameter="1"/>
   <Component type="ScriptPanel" id="PanPack" x="225.0" y="254.0" width="390.0"
              height="125.0" borderRadius="11.0">
-    <Component type="ScriptSliderPack" id="PanSliders" x="9.0" y="8.0" processorId="Pan"
+    <Component type="ScriptSlider" id="FxOffset2" x="326.0" y="34.0" width="50.0"
+               height="50.0" parentComponent="PanPack" processorId="StagePan"
+               parameterId="OffSet" numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               scaleFactor="0.2000000029802322" isPluginParameter="1" pluginParameterName="FxOffset"
+               defaultValue="0.5" middlePosition="0.5"/>
+    <Component type="ScriptSliderPack" id="PanSliders" x="9.0" y="8.0" processorId="StagePan"
                parentComponent="PanPack" width="290.0" height="110.0" itemColour="2002628295"
                itemColour2="16777215" sliderAmount="8.0" showValueOverlay="0"
                defaultValue="0.5"/>
     <Component type="ScriptLabel" id="PAN" x="301.0" y="5.0" width="90.0" height="20.0"
                parentComponent="PanPack" fontSize="20.0" textColour="4278190080"
                editable="0"/>
-    <Component type="ScriptLabel" id="PANRULE" x="300.0" y="97.0" width="90.0"
+    <Component type="ScriptLabel" id="PANRULE" x="302.0" y="97.0" width="90.0"
                height="20.0" parentComponent="PanPack" text="RULE" textColour="4278190080"
                editable="0"/>
-    <Component type="ScriptComboBox" id="ScriptComboBox1" x="311.0" y="43.0"
-               width="70.0" height="40.0" max="6" parentComponent="PanPack"
-               items="Linear&#10;Balanced&#10;Sine3dB&#10;Sine4.5dB&#10;Sine6dB&#10;Sqrt13dB"
-               bgColour="3123520264" itemColour="3121811203" itemColour2="3121942791"
-               textColour="3136677047" processorId="Pan" parameterId="rule"
-               isPluginParameter="1" pluginParameterName="PanRule"/>
   </Component>
   <Component type="ScriptPanel" id="GlobalMod1" x="12.0" y="386.0" width="300.0"
              height="145.0" bgColour="2269515780" itemColour="2957381636"
