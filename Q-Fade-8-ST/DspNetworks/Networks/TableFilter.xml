@@ -106,7 +106,7 @@
           <Connection NodeId="svf" ParameterId="Q"/>
         </Connections>
       </Parameter>
-      <Parameter ID="TableMod" MinValue="-1.0" MaxValue="1.0" Value="1.0">
+      <Parameter ID="TableMod" MinValue="-1.0" MaxValue="1.0" Value="0.314597900390625">
         <Connections>
           <Connection NodeId="pma" ParameterId="Multiply"/>
         </Connections>
