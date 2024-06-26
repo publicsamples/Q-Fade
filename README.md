@@ -19,7 +19,7 @@ Q-Fade is deigned to live on master, or bus channels. As Q-Fade has 8 input chan
     
 -   Ableton Live (see  [pinned comment here](https://www.youtube.com/watch?v=WfF4OX3LMqo)) Thanks to David Monroy for the tip.
     
--   [Element](https://kushview.net/element/)  (As both a plugin AND a host, Element is an excellent choice for those working in any DAW that doesn't allow for multi-input FX). Just fire up an instance of Element and load Q-Fade within that)
+-   [Element](https://kushview.net/element/)  (As both a plugin AND a host, Element is an excellent choice for those working in any DAW that doesn't allow for multi-input FX). Just fire up an instance of Element and load Q-Fade within that. Thanks to N.K Turley for the tip.)
     
 
 Please note that Q-Fade is in the early stages of development, there will be bugs and currently the Audiounit version isn't working.
